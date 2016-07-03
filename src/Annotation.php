@@ -17,7 +17,7 @@ class Annotation
      */
     public function __construct($docBlock)
     {
-        $this->parse($docBlock);
+        $this->properites = $this->parse($docBlock);
     }
     
     /**
@@ -94,6 +94,6 @@ class Annotation
         $string = preg_replace('/^\[[^\']*\'/', '[\'', $string);
         $string = preg_replace('/[\ ]*\*[\ ]*\]$/', ']', $string);
         
-        $this->properites = eval('return ' . $string . ';');
+        return eval('return ' . $string . ';');
     }
 }
