@@ -82,12 +82,13 @@ class Annotation
     
     /**
      * @param String $docBlock
+     * @return []
      */
     protected function parse($docBlock)
     {
         $match = [];
         if (!preg_match('/\[.*\]/', $docBlock, $match)) {
-            return;
+            return [];
         }
         
         $string = preg_replace('/\,[^\']*\'/', ', \'', $match[0]);
