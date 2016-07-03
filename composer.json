@@ -1,0 +1,24 @@
+{
+    "name": "kaplarn/annotation",
+    "description": "Annotation manager",
+    "keywords": ["annotation"],
+    "homepage": "https://github.com/kaplarn/annotation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Káplár Norbert",
+            "email": "kaplarnorbert@webshopexperts.hu"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaplarn\\Annotation\\": "src/",
+            "Kaplarn\\Annotation\\Tests\\": "tests/"
+        }
+    }
+}
